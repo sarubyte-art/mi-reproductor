@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Reproductor de Música</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Tarjeta del Reproductor -->
+    <div class="player-container">
+      <div class="song-info">
+        <h2 id="title">Cargando canciones...</h2>
+        <h3 id="artist">Biblioteca Local</h3>
+      </div>
+
+      <audio id="audio"></audio>
+
+      <div class="progress-container">
+        <input type="range" id="progress" value="0" min="0" max="100">
+      </div>
+
+      <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play">▶</button>
+        <button id="next">⏭</button>
+      </div>
+    </div>
+
+    <!-- Lista de Canciones debajo -->
+    <div class="playlist-container">
+      <h3>Lista de Canciones</h3>
+      <ul id="playlist"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
